@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Windows.Forms;
+
+namespace ToDoApp
+{
+    public partial class Form1 : Form
+    {
+        private List<string> toDoList = new List<string>();
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void addButton_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(textBox1.Text))
+            {
+                toDoList.Add(textBox1.Text);
+                listBox1.Items.Add(textBox1.Text);
+                textBox1.Text = string.Empty;
+                label1.Text = "Item added successfully.";
+            }
+            else
+            {
+                label1.Text = "Please enter a valid to-do item.";
+            }
+        }
+    }
+}
+
+
+
+

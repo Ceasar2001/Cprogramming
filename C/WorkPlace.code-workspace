@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "C:/Users/noname/Desktop/sample"
+		},
+		{
+			"path": "C:/Users/noname/Desktop/web_development"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "web_development"
+	}
+}

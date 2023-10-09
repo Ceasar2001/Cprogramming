@@ -1,0 +1,1 @@
+ console.log("After the function:", person);
